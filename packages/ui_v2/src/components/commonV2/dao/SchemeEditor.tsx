@@ -153,9 +153,9 @@ function SchemeEditor(props: Props) {
                 color="blue darken-4"
                 size="sm"
                 name="decisonSpeed"
-                value={DAOSpeed.Slow}
+                value={DAOSpeed.Fast}
                 style={styles.buttonColor}
-                outline={!(decisionSpeed === DAOSpeed.Slow)}
+                outline={!(decisionSpeed === DAOSpeed.Fast)}
                 onClick={handleClick}
               >
                 Fast
@@ -175,9 +175,9 @@ function SchemeEditor(props: Props) {
                 color="blue darken-4"
                 size="sm"
                 name="decisonSpeed"
-                value={DAOSpeed.Fast}
+                value={DAOSpeed.Slow}
                 style={styles.buttonColor}
-                outline={!(decisionSpeed === DAOSpeed.Fast)}
+                outline={!(decisionSpeed === DAOSpeed.Slow)}
                 onClick={handleClick}
               >
                 Slow
