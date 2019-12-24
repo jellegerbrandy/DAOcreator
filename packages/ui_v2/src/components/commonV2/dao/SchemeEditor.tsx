@@ -96,7 +96,11 @@ function SchemeEditor(props: Props) {
   ]);
 
   const handleClick = (e: any) => {
-    setDecisionSpeed(parseInt(e.target.value));
+    // e.target.value is occasionally undefined
+    if (e.target.value === undefined) return;
+
+    const value = parseInt(e.target.value);
+    if (decisionSpeed !== value) setDecisionSpeed(value);
   };
 
   return (
